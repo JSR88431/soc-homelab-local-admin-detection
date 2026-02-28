@@ -71,8 +71,16 @@ This query identifies accounts added to privileged security groups such as Admin
 **Technique: T1136 — Create Account**
 
 **Evidence:**
-
 Event ID 4720 shows creation of a new local account used for elevated access.
+
+**Tactic: Persistence / Privilege Escalation**
+
+**Technique: T1098 — Account Manipulation**
+
+**Evidence:**
+Event ID 4732 confirms addition of the account to the Administrators group.
+
+
 
 # Response Actions
 * Removed account from Administrators group.
