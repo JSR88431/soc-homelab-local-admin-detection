@@ -1,0 +1,11 @@
+## Query 1 ##
+  
+Event
+| where EventID in (4720, 4732)
+| sort by TimeGenerated desc
+
+## Query 2 ##
+  
+Event
+| where EventID == 4732
+| sort by TimeGenerated desc
